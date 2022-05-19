@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de las tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Square+Peg&display=swap" rel="stylesheet">
+    <!--Link de css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Envios</title>
+</head>
+<!--Encabezado de nuestro html-->
+<header>
+  <div class="logo">
+      <img src="../img/LOGSSS.png" alt="Logo de mi pagina web">
+      <h2 class="nombre-pagina">HelloAmoor</h2>
+  </div>
+  <nav class="menu-Inicio">
+      <ul class="menu">
+          <li class="menu-item">
+              <a href="../index.html">Home</a>
+          </li>
+          <li class="menu-item">
+              <a href="../pages/Productos.html">Productos</a>
+              <ul class="menu-Productos">
+                  <li class="opciones-produc">
+                      <a href="#">Playeras</a>
+                  </li>
+                  <li class="opciones-produc">
+                      <a href="#">Termos </a>
+                  </li>
+                  <li class="opciones-produc">
+                      <a href="#">Gorras</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="menu-item">
+              <a href="../pages/Galeria.html">Galeria</a>
+          </li>
+          <li class="menu-item">
+              <a href="../pages/Cards.html">Cards</a>
+          </li>
+          <li class="menu-item">
+              <a href="../pages/Contacto.html">Contacto</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form action="/action_page.php">
+          
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Miguel E. Ureña Nieto">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="vesper@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="CDMX">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">NIP</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+          
+            <div class="col-25">
+              <div class="container">
+                <h4>Cart
+                  <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                  </span>
+                </h4>
+                <p><a href="#">Product 1</a> <span class="price">$180</span></p>
+                <p><a href="#">Product 2</a> <span class="price">$100</span></p>
+                <p><a href="#">Product 3</a> <span class="price">$80</span></p>
+                <p><a href="#">Product 4</a> <span class="price">$50</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$410</b></span></p>
+              </div>
+            </div>
+          </div>
+    <main>
+    <!--<center>
+        <form>
+            <h2>Seleccione su sexo</h2>
+            <div>Hombre</div>
+            <input type="radio" name="sexo"  value="hombre">
+            <div>Mujer</div>
+            <input type="radio"  name="sexo"  value="mujer"><br>
+            <label for="nombre_apellido">Nombre</label>
+            <input type="text" name="nombre_apellido">
+        </form>
+    </center>
+    <center>
+        <form>
+            <h3>Selecciona tu talla</h3>
+            <select name="talles">
+                <option value="L">Large</option>
+                <option value="M">Mediana</option>
+                <option value="S">Chica</option>
+            </select>
+        </form>
+    </center>
+    </main>-->
+    <footer>
+      <h3>Siguenos en las redes!</h3>
+      <div class="social-icons-container">
+          <ul class="footer-redes">
+              <!--Instagram-->
+              <li class="footer-logos">
+                  <a href="" target="_blank">
+                      <img src="../img/001-facebook.png" alt="Facebook: Hello-Amoor">
+                  </a>
+              </li>
+              <li class="footer-logos">
+                  <a href="" target="_blank">
+                      <img src="../img/002-instagram.png" alt="Facebook: Hello-Amoor">
+                  </a>
+              </li>
+              <li class="footer-logos">
+                  <a href="" target="_blank">
+                      <img src="../img/003-whatsapp.png" alt="Facebook: Hello-Amoor">
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <ul class="footer-menu-container">
+          <li class="menu-item">Legal</li>
+          <li class="menu-item">Cookies</li>
+          <li class="menu-item">Privacy</li>
+          <li class="menu-item">Refounds</li>
+      </ul>
+      <span class="copyritght">&copy;2022, Hello-Amoor, All rightd reserved.</span>
+  </footer>
+</body>
+</html>
